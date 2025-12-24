@@ -66,7 +66,6 @@
 		E9E985F828B02D9400957F23 /* PlayerProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E985F728B02D9400957F23 /* PlayerProgress.swift */; };
 		E9FA07E328C82848005520B0 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA07E228C82848005520B0 /* Logger.swift */; };
 		EACB38122BCCA1330060DA4A /* AudioPlayerRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACB38112BCCA1330060DA4A /* AudioPlayerRateManager.swift */; };
-		EACB38142BCCA1410060DA4A /* LegacyAudioPlayerRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACB38132BCCA1410060DA4A /* LegacyAudioPlayerRateManager.swift */; };
 		EACB38162BCCA1500060DA4A /* DefaultedAudioPlayerRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACB38152BCCA1500060DA4A /* DefaultedAudioPlayerRateManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -146,7 +145,6 @@
 		E9E985F728B02D9400957F23 /* PlayerProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProgress.swift; sourceTree = "<group>"; };
 		E9FA07E228C82848005520B0 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		EACB38112BCCA1330060DA4A /* AudioPlayerRateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerRateManager.swift; sourceTree = "<group>"; };
-		EACB38132BCCA1410060DA4A /* LegacyAudioPlayerRateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacyAudioPlayerRateManager.swift; sourceTree = "<group>"; };
 		EACB38152BCCA1500060DA4A /* DefaultedAudioPlayerRateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultedAudioPlayerRateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				EACB38152BCCA1500060DA4A /* DefaultedAudioPlayerRateManager.swift */,
-				EACB38132BCCA1410060DA4A /* LegacyAudioPlayerRateManager.swift */,
 				EACB38112BCCA1330060DA4A /* AudioPlayerRateManager.swift */,
 				E9E8814828DA641B00D750C1 /* util */,
 				3A200C1427D64D7E00CBF02E /* AudioPlayer.swift */,
@@ -551,7 +548,6 @@
 				3A200C1527D64D7E00CBF02E /* AudioPlayer.swift in Sources */,
 				4DFE2DA32D345C390000B204 /* MyViewController.swift in Sources */,
 				E9D5507128AC1EC700C746DD /* DownloadItemPart.swift in Sources */,
-				EACB38142BCCA1410060DA4A /* LegacyAudioPlayerRateManager.swift in Sources */,
 				3AFCB5E827EA240D00ECCC05 /* NowPlayingInfo.swift in Sources */,
 				3AB34053280829BF0039308B /* Extensions.swift in Sources */,
 				E9D5505828AC1C1A00C746DD /* Library.swift in Sources */,
@@ -743,7 +739,7 @@
 				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = 7UFJ7D8V6A;
 				INFOPLIST_FILE = App/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.11.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DDEBUG\"";
@@ -767,7 +763,7 @@
 				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = 7UFJ7D8V6A;
 				INFOPLIST_FILE = App/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.audiobookshelf.app;
@@ -788,7 +784,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -810,7 +806,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.audiobookshelf.AudiobookshelfUnitTests;

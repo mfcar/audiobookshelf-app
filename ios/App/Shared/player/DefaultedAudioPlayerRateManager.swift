@@ -8,7 +8,6 @@
 import Foundation
 import AVFoundation
 
-@available(iOS 16.0, *)
 class DefaultedAudioPlayerRateManager: NSObject, AudioPlayerRateManager {
 
     internal var audioPlayer: AVPlayer

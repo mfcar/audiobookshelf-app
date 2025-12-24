@@ -64,11 +64,7 @@ class AudioPlayer: NSObject {
         self.sessionId = sessionId
         self.status = .uninitialized
         
-        if #available(iOS 16.0, *) {
-            self.rateManager = DefaultedAudioPlayerRateManager(audioPlayer: self.audioPlayer, defaultRate: playbackRate)
-        } else {
-            self.rateManager = LegacyAudioPlayerRateManager(audioPlayer: self.audioPlayer, defaultRate: playbackRate)
-        }
+        self.rateManager = DefaultedAudioPlayerRateManager(audioPlayer: self.audioPlayer, defaultRate: playbackRate)
         
         super.init()
         
@@ -610,16 +606,6 @@ class AudioPlayer: NSObject {
             let typeValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt,
             let type = AVAudioSession.InterruptionType(rawValue: typeValue) else {
                 return
-        }
-        
-        // When interruption is from the app suspending then don't resume playback
-        if #available(iOS 14.5, *) {
-            let reasonValue = userInfo[AVAudioSessionInterruptionReasonKey] as? UInt ?? 0
-            let reason = AVAudioSession.InterruptionReason(rawValue: reasonValue)
-            if (reason == .appWasSuspended) {
-                AbsLogger.info(message:"AVAudioSession was suspended")
-                return
-            }
         }
         
         switch type {
